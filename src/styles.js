@@ -75,6 +75,21 @@ export const Title = styled("div")({
   },
   h6: {
     width: "70%",
+    fontSize: "1rem",
+    color: "#373737",
     textAlign: "justify",
   },
 });
+
+export const Expertise = styled("div")({
+  display: "flex",
+  alignItems: "center",
+  marginTop: "15%",
+  marginBottom: "15%",
+});
+
+export const CardsExpertise = styled("div")({
+  marginLeft: "15%",
+});
+
+export const Idealizadores = styled("div")({});
