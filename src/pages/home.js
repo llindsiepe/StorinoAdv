@@ -24,7 +24,7 @@ import {
   CardsExpertise,
   Expertise,
   Idealizadores,
-} from "./styles.js";
+} from "../styles/Home";
 
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";

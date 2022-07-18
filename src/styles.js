@@ -13,13 +13,14 @@ export const OptionBanner = styled("div")({
 });
 
 export const ButtonMain = styled("div")({
-  width: "212px",
-  height: "48px",
+  width: "20rem",
+  height: "2rem",
   background: "#D9D9D9",
   color: "#373737",
   textAlign: "center",
   borderRadius: "6px",
-  marginRight: "2rem",
+  paddingTop: "0.5rem",
+  marginRight: "auto",
   marginLeft: "auto",
 });
 
@@ -75,6 +76,7 @@ export const Title = styled("div")({
   },
   h6: {
     width: "70%",
+    fontWeight: "400",
     fontSize: "1rem",
     color: "#373737",
     textAlign: "justify",

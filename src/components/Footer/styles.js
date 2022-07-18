@@ -15,7 +15,7 @@ export const Container = styled("div")({
 
 export const Law = styled("h6")({
   color: "white",
-  marginTop: "3%",
+  marginTop: "2%",
   textAlign: "center",
 });
 
@@ -24,8 +24,12 @@ export const Info = styled("div")({
 });
 
 export const Redes = styled("div")({
-  marginTop: "3%",
+  marginTop: "4rem",
   color: "white",
+
+  h6: {
+    marginLeft: "0.5rem",
+  },
 });
 
 export const AboutUs = styled("div")({
@@ -35,8 +39,8 @@ export const AboutUs = styled("div")({
 });
 
 export const ButtonSecondary = styled("div")({
-  width: "210px",
-  height: "44px",
+  width: "16rem",
+  height: "2rem",
   border: "2px solid white",
   color: "white",
   textAlign: "center",
