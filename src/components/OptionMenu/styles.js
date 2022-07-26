@@ -6,9 +6,9 @@ export const Container = styled.button`
   border: none;
   border-radius: 4;
   text-align: center;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
 
   @media (max-width: 720px) {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 `;
