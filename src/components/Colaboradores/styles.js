@@ -1,15 +1,12 @@
-import * as React from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 
-export const Main = styled("div")({
-  display: "table",
-  verticalAlign: "middle",
-});
+export const Main = styled.div`
+  text-align: center;
+  color: #373737;
+  width: 100%;
 
-export const TextCard = styled("div")({
-  color: "#373737",
-  width: "70%",
-  textAlign: "center",
-
-  h6: { textAlign: "center", color: "#9A9A9A" },
-});
+  h6 {
+    margin-top: -10px;
+    color: #9a9a9a;
+  }
+`;

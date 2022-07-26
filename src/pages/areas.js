@@ -8,12 +8,13 @@ import {
   Title,
   TextAreaAtuacao,
   Line,
-} from "./styles/Areas";
+} from "../styles/Areas";
 
-import PhotoAbout from "./images/photoAbout.png";
+import PhotoAbout from "../images/photoAbout.png";
+import LineTitle from "../images/LineTitle.png";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Areas() {
   return (
@@ -27,15 +28,18 @@ function Areas() {
       <Banner>
         <img src={PhotoAbout} />
         <Title>
-          <h3>Áreas de atuação</h3>
-          <h5>Conheça mais sobre onde atuamos</h5>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={LineTitle} height="60rem" />
+            <div style={{ marginLeft: "1rem" }}>
+              <h3>Áreas de atuação</h3>
+              <h5>Conheça mais sobre onde atuamos</h5>
+            </div>
+          </div>
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
-            ridiculus massa bibendum arcu nunc arcu. Volutpat bibendum est mi
-            penatibus et id volutpat massa. In aliquet amet, porta faucibus
-            venenatis. Id sed bibendum scelerisque adipiscing posuere nam nec
-            volutpat tortor. Proin morbi purus felis pharetra. Morbi fermentum
-            vitae leo amet fames nunc, fames.
+            Hoje atendemos a diversas áreas do direito, com uma equipe que
+            possui diversas especialidades, porém cada profissional com seu foco
+            bem definido, para trazer as melhores e mais eficazes soluções aos
+            clientes.
           </h6>
         </Title>
       </Banner>

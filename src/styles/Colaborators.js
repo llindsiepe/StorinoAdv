@@ -50,29 +50,29 @@ export const Title = styled.div`
     font-size: 0.8rem;
     color: #373737;
     text-align: justify;
-
-    @media (max-width: 720px) {
-      width: 90%;
-    }
-  }
-`;
-
-export const TextAreaAtuacao = styled.div`
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 4rem;
-  text-align: justify;
-
-  h3 {
-    color: #373737;
-  }
-  h6 {
-    color: #9a9a9a;
-    font-weight: 400;
   }
 `;
 
 export const Line = styled.hr`
   border: 0.5px solid #9a9a9a;
   margin-bottom: 4rem;
+`;
+
+export const Idealizadores = styled.div`
+  margin-bottom: 4rem;
+`;
+
+export const DivColaboradores = styled.div`
+  display: flex;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-between;
+
+  @media (max-width: 720px) {
+    display: inline;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
 `;

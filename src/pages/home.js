@@ -1,14 +1,10 @@
 import React from "react";
 
-import Icon from "./images/Icon.png";
-import IconComunicação from "./images/IconComunicação.png";
-import IconSegurança from "./images/IconSegurança.png";
-import Photo from "./images/photo.png";
-
-import Leopoldo from "./images/Leopoldo.png";
-import Wanessa from "./images/Wanessa.png";
-import Fernanda from "./images/Fernanda.png";
-import Jaqueline from "./images/Jaqueline.png";
+import Icon from "../images/Icon.png";
+import IconComunicação from "../images/IconComunicação.png";
+import IconSegurança from "../images/IconSegurança.png";
+import Photo from "../images/photo.png";
+import LineTitle from "../images/LineTitle.png";
 
 import GlobalStyles from "@mui/material/GlobalStyles";
 
@@ -26,13 +22,13 @@ import {
   Idealizadores,
 } from "../styles/Home";
 
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
-import CardExpertise from "./components/CardExpertise";
-import Colaboradores from "./components/Colaboradores";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Card from "../components/Card";
+import CardExpertise from "../components/CardExpertise";
+import Colaboradores from "../components/Colaboradores";
+import Footer from "../components/Footer";
 
-function App() {
+function Home() {
   return (
     <Container>
       <GlobalStyles
@@ -69,11 +65,16 @@ function App() {
           text="Sempre dinâmico no contato direto e indireto com os clientes, trazemos respostas rápidas as dúvidas e questionamentos do dia a dia no desenvolvimento do trabalho junto aos clientes e parceiros."
         />
       </Cards>
-      <AboutUs style={{ display: "flex" }}>
+      <AboutUs>
         <img src={Photo} width="550" />
         <Title>
-          <h3>O Escritório</h3>
-          <h5>Conheça mais sobre quem somos</h5>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={LineTitle} height="60rem" />
+            <div style={{ marginLeft: "1rem" }}>
+              <h3>O Escritório</h3>
+              <h5>Conheça mais sobre quem somos</h5>
+            </div>
+          </div>
           <h6>
             Situados na região central da cidade de Guarulhos, próximos aos
             principais centros empresariais de São Paulo, o Storino Advogados
@@ -88,38 +89,41 @@ function App() {
       </AboutUs>
       <Expertise>
         <Title>
-          <h3>Área de atuação</h3>
-          <h5>Conheça mais sobre onde atuamos</h5>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={LineTitle} height="60rem" />
+            <div style={{ marginLeft: "1rem" }}>
+              <h3>Área de atuação</h3>
+              <h5>Conheça mais sobre onde atuamos</h5>
+            </div>
+          </div>
         </Title>
         <CardsExpertise>
-          <div style={{ display: "flex" }}>
+          <div>
             <CardExpertise
               title="Trabalhista"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
+              text="Para atender pessoas jurídicas e pessoas físicas com direcionamento em demandas trabalhistas."
             />
-            <CardExpertise
-              title="Consumidor"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
-            />
-          </div>
-          <div style={{ display: "flex" }}>
             <CardExpertise
               title="Cível"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
+              text="Atuação de maneira preventiva e contenciosa, com providências extrajudiciais e propositura de ações judiciais."
+            />
+            <CardExpertise
+              title="Família e sucessões"
+              text="Atuação de maneira consultiva e preventiva, bem como, na resolução de conflitos que envolvam a seara familiar."
+            />
+          </div>
+          <div>
+            <CardExpertise
+              title="Consumidor"
+              text="Com foco na orientação, prevenção e resolução de conflitos nas relações de consumo."
             />
             <CardExpertise
               title="Previdenciário"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
-            />
-          </div>
-          <div style={{ display: "flex" }}>
-            <CardExpertise
-              title="Família e sucessões"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
+              text="Com exercício em demandas administrativas e judiciais relacionadas ao Regime Geral de Previdência Social (INSS) e Regimes Próprios de Previdência Social."
             />
             <CardExpertise
               title="Empresarial"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas diam commodo vel eget placerat nisl."
+              text="Prática de assessoria/consultoria jurídica continuada para pequenas e grandes empresas."
             />
           </div>
         </CardsExpertise>
@@ -157,4 +161,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

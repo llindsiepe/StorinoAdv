@@ -4,10 +4,10 @@ export const Container = styled.div`
   margin: -8px;
 `;
 
-export const Banner = styled.div`
-  display: flex;
+export const Contato = styled.div`
   margin-top: 4rem;
   margin-bottom: 10rem;
+  width: 100%;
 
   img {
     @media (max-width: 720px) {
@@ -39,40 +39,46 @@ export const Title = styled.div`
 
   h3 {
     color: #373737;
+    margin-bottom: 10%;
   }
   h5 {
     color: #9a9a9a;
     margin-top: -8%;
   }
-  h6 {
-    width: 70%;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #373737;
-    text-align: justify;
+`;
 
-    @media (max-width: 720px) {
-      width: 90%;
-    }
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 720px) {
+    display: inline;
   }
 `;
 
-export const TextAreaAtuacao = styled.div`
+export const Options = styled.div`
   margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 4rem;
-  text-align: justify;
+`;
 
-  h3 {
-    color: #373737;
-  }
-  h6 {
-    color: #9a9a9a;
-    font-weight: 400;
+export const OptionsRedes = styled.div`
+  margin-left: 10%;
+  margin-bottom: -1rem;
+
+  @media (max-width: 720px) {
+    width: 20%;
+    display: flex;
   }
 `;
 
-export const Line = styled.hr`
-  border: 0.5px solid #9a9a9a;
-  margin-bottom: 4rem;
+export const ButtonSecondary = styled.div`
+  width: 20rem;
+  height: 2rem;
+  border: 2px solid #373737;
+  color: #373737;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 0.8rem;
+  border-radius: 6px;
+  margin-right: 5%;
+  margin-bottom: 1rem;
 `;

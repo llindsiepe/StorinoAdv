@@ -1,21 +1,26 @@
-import * as React from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 
-export const Main = styled("div")({
-  display: "flex",
-  alignItems: "flex-start",
-  gap: 10,
-  color: "#373737",
-  padding: "2rem",
+export const Main = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #373737;
+  padding: 2rem;
 
-  width: 300,
-  height: 150,
-  marginTop: -60,
+  width: 300px;
+  height: 150px;
+  margin-top: -60px;
 
-  background: "#FAFAFA",
-  borderRadius: 6,
-});
+  background: #fafafa;
+  border-radius: 6px;
 
-export const TextCard = styled("div")({
-  h6: { textAlign: "justify" },
-});
+  @media (max-width: 720px) {
+    margin-bottom: 5rem;
+  }
+`;
+
+export const TextCard = styled.div`
+  h6 {
+    text-align: "justify";
+  }
+`;

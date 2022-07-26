@@ -1,8 +1,15 @@
-import * as React from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 
-export const Main = styled("div")({});
+export const Main = styled.div``;
 
-export const TextCard = styled("div")({
-  h6: { textAlign: "justify", width: "50%", color: "#9A9A9A" },
-});
+export const TextCard = styled.div`
+  h6 {
+    text-align: justify;
+    width: 50%;
+    color: #9a9a9a;
+
+    @media (max-width: 720px) {
+      width: 82%;
+    }
+  }
+`;

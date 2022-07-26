@@ -1,11 +1,14 @@
-import * as React from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 
-export const Container = styled("button")({
-  background: "none",
-  color: "white",
-  border: "none",
-  borderRadius: 4,
-  textAlign: "center",
-  fontSize: "0.8rem",
-});
+export const Container = styled.button`
+  background: none;
+  color: white;
+  border: none;
+  border-radius: 4;
+  text-align: center;
+  font-size: 0.8rem;
+
+  @media (max-width: 720px) {
+    font-size: 0.6rem;
+  }
+`;
