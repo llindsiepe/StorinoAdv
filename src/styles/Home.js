@@ -59,8 +59,8 @@ export const Banner = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   justify-content: space-between;
 
   @media (max-width: 720px) {
