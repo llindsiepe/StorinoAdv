@@ -128,34 +128,7 @@ function Home() {
           </div>
         </CardsExpertise>
       </Expertise>
-      {/* <Idealizadores>
-        <Title>
-          <h3>Idealizadores</h3>
-          <h5>Conheça os nossos idealizadores</h5>
-        </Title>
-        <div style={{ display: "flex", marginTop: "5%" }}>
-          <Colaboradores
-            src={Leopoldo}
-            name="Leopoldo de Souza Storino"
-            text="Sócio Fundador"
-          />
-          <Colaboradores
-            src={Wanessa}
-            name="Jaqueline de Souza Henrique"
-            text="Sócia"
-          />
-          <Colaboradores
-            src={Fernanda}
-            name="Fernanda Fabri Ferreira"
-            text="Coordenadora Cível"
-          />
-          <Colaboradores
-            src={Jaqueline}
-            name="Wanessa Belchior"
-            text="Coordenadora Trabalhista"
-          />
-        </div>
-      </Idealizadores> */}
+
       <Footer />
     </Container>
   );

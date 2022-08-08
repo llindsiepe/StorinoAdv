@@ -34,6 +34,7 @@ export const Redes = styled("div")({
 
 export const AboutUs = styled("div")({
   color: "white",
+  marginTop: "2.5rem",
 
   h5: { width: "80%", textAlign: "justify" },
 });

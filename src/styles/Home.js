@@ -131,7 +131,7 @@ export const Expertise = styled.div`
 `;
 
 export const CardsExpertise = styled.div`
-  margin-left: 15%;
+  margin-left: 10%;
   display: flex;
 
   @media (max-width: 720px) {

@@ -13,8 +13,11 @@ import {
 import Leopoldo from "../images/Leopoldo.png";
 import Wanessa from "../images/Wanessa.png";
 import Fernanda from "../images/Fernanda.png";
-
 import Jaqueline from "../images/Jaqueline.png";
+import Patricia from "../images/Patricia.png";
+import Marcia from "../images/Marcia.png";
+import Giovana from "../images/Giovana.png";
+import Ester from "../images/Ester.png";
 
 import PhotoAbout from "../images/photoAbout.png";
 import LineTitle from "../images/LineTitle.png";
@@ -98,37 +101,31 @@ function Colaborators() {
       <Idealizadores>
         <DivColaboradores>
           <Colaboradores
-            src={Leopoldo}
+            src={Wanessa}
             name="Wanessa Belchior"
             text="Advogada"
             description="+ Leia mais"
           />
           <Colaboradores
-            src={Jaqueline}
+            src={Patricia}
             name="Patricia de Oliveira Ferreira"
             text="Advogada"
             description="+ Leia mais"
           />
           <Colaboradores
-            src={Fernanda}
-            name="Geraldo Storino Neto"
-            text="Assistente Jurídico"
-            description="+ Leia mais"
+            src={Marcia}
+            name="Marcia Cristina Sona"
+            text="Gerente Financeira"
           />
         </DivColaboradores>
         <DivColaboradores>
           <Colaboradores
-            src={Leopoldo}
-            name="Marcia Cristina Sona"
-            text="Gerente Financeira"
-          />
-          <Colaboradores
-            src={Jaqueline}
+            src={Giovana}
             name="Giovana Ramos"
             text="Recepcionista"
           />
           <Colaboradores
-            src={Fernanda}
+            src={Ester}
             name="Ester Alves Tareto"
             text="Estagiária"
           />

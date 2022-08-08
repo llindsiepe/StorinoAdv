@@ -43,7 +43,15 @@ export const Acess = styled.div`
 
   @media (max-width: 720px) {
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
     margin-right: 5%;
+
+    img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    h6 {
+      font-size: 0.4rem;
+    }
   }
 `;

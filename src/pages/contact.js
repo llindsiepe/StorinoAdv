@@ -42,8 +42,12 @@ function Contact() {
           </Title>
 
           <Options>
-            <ButtonSecondary>Envie um Whatsapp</ButtonSecondary>
-            <ButtonSecondary>Envie um Email</ButtonSecondary>
+            <a href="https://api.whatsapp.com/send?phone=5511992084052">
+              <ButtonSecondary>Envie um Whatsapp</ButtonSecondary>
+            </a>
+            <a href="mailto:email@example.com">
+              <ButtonSecondary>Envie um Email</ButtonSecondary>
+            </a>
           </Options>
         </Contato>
 
@@ -59,8 +63,12 @@ function Contact() {
           </Title>
 
           <OptionsRedes>
-            <img src={ContactFacebook} style={{ marginRight: "1rem" }} />
-            <img src={ContactInstagram} />
+            <a href="https://www.facebook.com/storinoadv/">
+              <img src={ContactFacebook} style={{ marginRight: "1rem" }} />
+            </a>
+            <a href="https://www.instagram.com/storinoadvogados/">
+              <img src={ContactInstagram} />
+            </a>
           </OptionsRedes>
         </Contato>
       </Content>
