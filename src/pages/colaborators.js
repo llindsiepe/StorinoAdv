@@ -2,6 +2,8 @@ import React from "react";
 
 import GlobalStyles from "@mui/material/GlobalStyles";
 
+import Button from "@mui/material/Button";
+
 import {
   Container,
   Banner,
@@ -25,8 +27,13 @@ import LineTitle from "../images/LineTitle.png";
 import Navbar from "../components/Navbar";
 import Colaboradores from "../components/Colaboradores";
 import Footer from "../components/Footer";
+import ModalAbout from "../components/ModalAbout";
 
 function Colaborators() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Container>
       <GlobalStyles
@@ -72,18 +79,21 @@ function Colaborators() {
             name="Leopoldo de Souza Storino"
             text="Sócio Fundador"
             description="+ Leia mais"
+            handleOpen={handleOpen}
           />
           <Colaboradores
             src={Jaqueline}
             name="Jaqueline de Souza Henrique"
             text="Sócia"
             description="+ Leia mais"
+            handleOpen={handleOpen}
           />
           <Colaboradores
             src={Fernanda}
             name="Fernanda Fabri Ferreira"
             text="Coordenadora"
             description="+ Leia mais"
+            handleOpen={handleOpen}
           />
         </DivColaboradores>
       </Idealizadores>
@@ -105,12 +115,14 @@ function Colaborators() {
             name="Wanessa Belchior"
             text="Advogada"
             description="+ Leia mais"
+            handleOpen={handleOpen}
           />
           <Colaboradores
             src={Patricia}
             name="Patricia de Oliveira Ferreira"
             text="Advogada"
             description="+ Leia mais"
+            handleOpen={handleOpen}
           />
           <Colaboradores
             src={Marcia}
@@ -131,6 +143,9 @@ function Colaborators() {
           />
         </DivColaboradores>
       </Idealizadores>
+
+      {/* <Button onClick={handleOpen}>Open modal</Button> */}
+      <ModalAbout open={open} setOpen={setOpen} />
 
       <Footer />
     </Container>
