@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const Banner = styled.div`
   display: flex;
   margin-top: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 
   img {
     @media (max-width: 720px) {
@@ -45,7 +45,7 @@ export const Title = styled.div`
     margin-top: -8%;
   }
   h6 {
-    width: 70%;
+    width: 85%;
     font-weight: 400;
     font-size: 0.8rem;
     color: #373737;

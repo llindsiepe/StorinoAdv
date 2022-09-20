@@ -7,6 +7,7 @@ export const Container = styled.button`
   border-radius: 4;
   text-align: center;
   font-size: 0.8rem;
+  font-family: Poppins;
 
   @media (max-width: 720px) {
     font-size: 0.4rem;

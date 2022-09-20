@@ -31,7 +31,19 @@ import ModalAbout from "../components/ModalAbout";
 
 function Colaborators() {
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  const [information, setInformation] = React.useState({});
+
+  const handleOpen = (name, text, src, about, email, oab) => {
+    setInformation({
+      name: name,
+      text: text,
+      src: src,
+      about: about,
+      email: email,
+      oab: oab,
+    });
+    setOpen(true);
+  };
   const handleClose = () => setOpen(false);
 
   return (
@@ -43,7 +55,6 @@ function Colaborators() {
       />
       <Navbar />
       <Banner>
-        <img src={PhotoAbout} />
         <Title>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={LineTitle} height="60rem" />
@@ -61,7 +72,6 @@ function Colaborators() {
           </h6>
         </Title>
       </Banner>
-
       <Title>
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={LineTitle} height="60rem" />
@@ -71,7 +81,6 @@ function Colaborators() {
           </div>
         </div>
       </Title>
-
       <Idealizadores>
         <DivColaboradores>
           <Colaboradores
@@ -80,6 +89,11 @@ function Colaborators() {
             text="Sócio Fundador"
             description="+ Leia mais"
             handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduado em Direito na Universidade Metropolitana do Estado de São Paulo – FIG UNIMESP. Pós graduado em Direito trabalhista pela faculdade Gama Filho. Professor da Faculdade Anhembi Morumbi de 2014 até 2016. Palestrante."
+            email="l.storino@storino.adv.br"
+            oab="OAB/SP 296.480"
           />
           <Colaboradores
             src={Jaqueline}
@@ -87,6 +101,11 @@ function Colaborators() {
             text="Sócia"
             description="+ Leia mais"
             handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduada em direito na Faculdade Metropolitanas Unidas. Pós-graduada em Direito de Família e Sucessões. Pós-graduanda em Direito Previdenciário."
+            email="j.henrique@storino.adv.br"
+            oab="OAB/SP 436.305"
           />
           <Colaboradores
             src={Fernanda}
@@ -94,10 +113,14 @@ function Colaborators() {
             text="Coordenadora"
             description="+ Leia mais"
             handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduada em Direito na Universidade Metropolitana do Estado de São Paulo – FIG UNIMESP. Pós graduada em Direito e Processo Civil. Pós graduada em Direito e Processo Previdenciário. Pós-graduanda em Família e Sucessões."
+            email="f.fabri@storino.adv.br"
+            oab="OAB/SP 449.413"
           />
         </DivColaboradores>
       </Idealizadores>
-
       <Title>
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={LineTitle} height="60rem" />
@@ -107,7 +130,6 @@ function Colaborators() {
           </div>
         </div>
       </Title>
-
       <Idealizadores>
         <DivColaboradores>
           <Colaboradores
@@ -116,6 +138,11 @@ function Colaborators() {
             text="Advogada"
             description="+ Leia mais"
             handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduada em Direito na Universidade Nove de Julho - UNINOVE. Pós Graduanda em Direito e Processo do trabalho."
+            email="w.belchior@storino.adv.br"
+            oab="OAB/SP 468.759"
           />
           <Colaboradores
             src={Patricia}
@@ -123,11 +150,22 @@ function Colaborators() {
             text="Advogada"
             description="+ Leia mais"
             handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduada em Psicologia - Faculdades Integradas de Ciências Humanas, Saúde e Educação de Guarulhos. Pós graduada em Docência no Ensino Superior - FIG UNIMESP. Graduada em Direito na Universidade Metropolitana do Estado de São Paulo – FIG UNIMESP. Pós-graduanda em Direito Previdenciário e Processo Previdenciário -   Faculdade Damásio."
+            email=""
+            oab="OAB – 469088"
           />
           <Colaboradores
             src={Marcia}
             name="Marcia Cristina Sona"
             text="Gerente Financeira"
+            description="+ Leia mais"
+            handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduada em Psicologia pela universidade de Guarulhos (UNG). Pós graduanda em Psicologia Jurídica e Forense pelo grupo IPEBEJ, Faculdade Volpe Miele (FVM). "
+            email="financeiro@storino.adv.br"
           />
         </DivColaboradores>
         <DivColaboradores>
@@ -135,17 +173,28 @@ function Colaborators() {
             src={Giovana}
             name="Giovana Ramos"
             text="Recepcionista"
+            description="+ Leia mais"
+            handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduanda em Biomedicina na UNIVERSIDADE CRUZEIRO DO SUL."
+            email="recepcao@storino.adv.br"
           />
           <Colaboradores
             src={Ester}
             name="Ester Alves Tareto"
             text="Estagiária"
+            description="+ Leia mais"
+            handleOpen={handleOpen}
+            open={open}
+            setOpen={setOpen}
+            about="Graduanda em Direito na Universidade Metropolitana do Estado de São Paulo – FIG UNIMESP."
+            email="e.tareto@storino.adv.br"
           />
         </DivColaboradores>
       </Idealizadores>
-
       {/* <Button onClick={handleOpen}>Open modal</Button> */}
-      <ModalAbout open={open} setOpen={setOpen} />
+      <ModalAbout open={open} setOpen={setOpen} information={information} />
 
       <Footer />
     </Container>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, Navigate } from "react-router-dom";
 
 import Icon from "../images/Icon.png";
 import IconComunicação from "../images/IconComunicação.png";
@@ -29,6 +30,8 @@ import Colaboradores from "../components/Colaboradores";
 import Footer from "../components/Footer";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <GlobalStyles
@@ -45,7 +48,9 @@ function Home() {
         </h1>
         <h5>Com mais de 10 anos de mercado, sabemos como e quando agir.</h5>
         <OptionBanner>
-          <ButtonMain>Fale conosco</ButtonMain>
+          <ButtonMain href="https://api.whatsapp.com/send?phone=5511992084052">
+            Fale conosco
+          </ButtonMain>
         </OptionBanner>
       </Banner>
       <Cards>

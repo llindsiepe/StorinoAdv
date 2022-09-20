@@ -21,7 +21,7 @@ const style = {
   p: 8,
 };
 
-export default function ModalAbout({ open, setOpen }) {
+export default function ModalAbout({ open, setOpen, information }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -45,32 +45,25 @@ export default function ModalAbout({ open, setOpen }) {
           </CloseModal>
           <HeaderModal>
             <div>
-              <img src={Jaqueline} />
+              <img src={information.src} />
             </div>
             <Title>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <img src={LineTitle} height="60rem" />
                 <div style={{ marginLeft: "1rem" }}>
-                  <h3>Jaqueline de Souza Henrique</h3>
-                  <h5>Sócia</h5>
+                  <h3>{information.name}</h3>
+                  <h5>{information.text}</h5>
                 </div>
               </div>
             </Title>
           </HeaderModal>
           <TextModal>
+            <h6>{information.oab}</h6>
+            <h6>{information.about}</h6>
+            <br />
             <h6>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
-              egestas diam commodo vel eget placerat nisl.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Et egestas diam commodo vel
-              eget placerat nisl.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Et egestas diam commodo vel eget placerat
-              nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
-              egestas diam commodo vel eget placerat nisl.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Et egestas diam commodo vel
-              eget placerat nisl.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Et egestas diam commodo vel eget placerat
-              nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
-              egestas diam commodo vel eget placerat nisl.
+              <b>Email:</b>
+              {information.email}
             </h6>
           </TextModal>
         </Box>

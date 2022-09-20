@@ -39,12 +39,13 @@ export const AboutUs = styled("div")({
   h5: { width: "80%", textAlign: "justify" },
 });
 
-export const ButtonSecondary = styled("div")({
+export const ButtonSecondary = styled("a")({
   width: "16rem",
-  height: "2rem",
+  padding: "0.5rem",
   border: "2px solid white",
   color: "white",
   textAlign: "center",
   borderRadius: "6px",
   marginRight: "5%",
+  textDecoration: "none",
 });

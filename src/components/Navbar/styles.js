@@ -30,7 +30,7 @@ export const Menu = styled.div`
   display: flex;
 
   @media (max-width: 720px) {
-    gap: 0.5rem;
+    gap: 0.2rem;
   }
 `;
 
@@ -40,6 +40,11 @@ export const Acess = styled.div`
   align-items: center;
   gap: 1rem;
   margin-right: 10%;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   @media (max-width: 720px) {
     gap: 0.5rem;

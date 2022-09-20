@@ -64,7 +64,9 @@ export default function Card() {
             </h5>
           </AboutUs>
 
-          <ButtonSecondary>Fale conosco</ButtonSecondary>
+          <ButtonSecondary href="https://api.whatsapp.com/send?phone=5511992084052">
+            Fale conosco
+          </ButtonSecondary>
         </Container>
         <Law>© 2022 Storino Advogados. Todos os direitos reservados</Law>
       </Main>

@@ -11,16 +11,24 @@ export const OptionBanner = styled.div`
   margin-top: 2%;
 `;
 
-export const ButtonMain = styled.div`
+export const ButtonMain = styled.a`
   width: 20rem;
-  height: 2rem;
+  padding: 1rem;
   background: #d9d9d9;
   color: #373737;
   text-align: center;
   border-radius: 6px;
-  padding-top: 0.5rem;
   margin-right: auto;
   margin-left: auto;
+  border: none;
+  font-family: Poppins;
+  text-decoration: none;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 export const ButtonSecondary = styled.div`

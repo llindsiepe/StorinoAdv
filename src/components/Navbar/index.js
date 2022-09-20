@@ -1,5 +1,5 @@
 import React from "react";
-// import { useHistory, useLocation } from "react-router-dom";
+import { useHistory, useNavigate } from "react-router-dom";
 
 import Logotipo from "../../images/logotipo.png";
 import User from "../../images/user.png";
@@ -9,8 +9,9 @@ import { Main, LogotipoImage, Menu, Acess } from "./styles.js";
 import OptionMenu from "../OptionMenu/index.js";
 
 export default function Navbar() {
-  // const navigate = useHistory();
-  // const location = useLocation();
+  // const history = useHistory();
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -21,27 +22,45 @@ export default function Navbar() {
 
         <Menu>
           <OptionMenu
-            // active={location.pathname == "/"}
-            // click={() => {
-            //   navigate.push("/");
-            // }}
             title={"Home"}
+            onClick={() => {
+              navigate("/");
+            }}
           />
           <OptionMenu
-            // active={location.pathname == "/sobre"}
-            // click={() => {
-            //   navigate.push("/sobre");
-            // }}
             title={"Sobre nós"}
+            onClick={() => {
+              navigate("/sobre");
+            }}
           />
-          <OptionMenu title={"Áreas de atuação"} />
-          <OptionMenu title={"Nossa equipe"} />
-          <OptionMenu title={"Contato"} />
+          <OptionMenu
+            title={"Áreas de atuação"}
+            onClick={() => {
+              // history.push("/sobre");
+              navigate("/areas");
+            }}
+          />
+          <OptionMenu
+            title={"Nossa equipe"}
+            onClick={() => {
+              // history.push("/sobre");
+              navigate("/colaborators");
+            }}
+          />
+          <OptionMenu
+            title={"Contato"}
+            onClick={() => {
+              // history.push("/sobre");
+              navigate("/contact");
+            }}
+          />
         </Menu>
 
         <Acess>
           <img src={User} width="20rem" height="20rem" />
-          <h6>Associados</h6>
+          <a href="http://storino.ddns.net:5000/">
+            <h6>Associados</h6>
+          </a>
         </Acess>
       </Main>
     </>

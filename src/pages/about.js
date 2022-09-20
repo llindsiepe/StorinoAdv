@@ -4,7 +4,7 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 
 import { Container, Banner, Title } from "../styles/About";
 
-import PhotoAbout from "../images/photoAbout.png";
+import PhotoAbout from "../images/about.jpeg";
 import LineTitle from "../images/LineTitle.png";
 
 import Navbar from "../components/Navbar";
@@ -20,7 +20,7 @@ function About() {
       />
       <Navbar />
       <Banner>
-        <img src={PhotoAbout} />
+        <img src={PhotoAbout} height="800rem" />
         <Title>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={LineTitle} height="60rem" />

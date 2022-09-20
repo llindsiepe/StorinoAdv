@@ -26,7 +26,6 @@ function Areas() {
       />
       <Navbar />
       <Banner>
-        <img src={PhotoAbout} />
         <Title>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={LineTitle} height="60rem" />
