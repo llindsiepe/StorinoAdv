@@ -58,6 +58,9 @@ export const Content = styled.div`
 
 export const Options = styled.div`
   margin-left: 10%;
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const OptionsRedes = styled.div`
@@ -65,8 +68,12 @@ export const OptionsRedes = styled.div`
   margin-bottom: -1rem;
 
   @media (max-width: 720px) {
-    width: 20%;
     display: flex;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 `;
 
