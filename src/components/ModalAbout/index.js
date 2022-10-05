@@ -15,7 +15,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 800,
+  maxWidth: 800,
   bgcolor: "background.paper",
   boxShadow: 24,
   p: 8,
@@ -60,7 +60,6 @@ export default function ModalAbout({ open, setOpen, information }) {
           <TextModal>
             <h6>{information.oab}</h6>
             <h6>{information.about}</h6>
-            <br />
             <h6>
               <b>Email:</b>
               {information.email}

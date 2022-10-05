@@ -35,6 +35,15 @@ export const HeaderModal = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
+
+  @media (max-width: 720px) {
+    display: block;
+    margin-bottom: 0.5rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const TextModal = styled.div`
@@ -49,6 +58,7 @@ export const CloseModal = styled.div`
   text-align: right;
   margin-top: -2rem;
   margin-right: -2rem;
+
   button {
     width: 4rem;
     height: 4rem;

@@ -52,16 +52,13 @@ export default function Card() {
               <img src={WhatsAppC} width="50rem" height="50rem" /> */}
             </Redes>
           </Info>
+
           <AboutUs>
-            <h5>
-              Fale conosco
-              <br />
-              <br />
+            <h5>Fale conosco</h5>
+            <h6>
               Rua São Paulo 176, Vila Tijuco, Guarulhos/SP. CEP: 07020-210.{" "}
-              <br />
-              <br />
-              (11) 4969-7474 • (11) 99208-4052
-            </h5>
+            </h6>
+            <h6>(11) 4969-7474 • (11) 99208-4052</h6>
           </AboutUs>
 
           <ButtonSecondary href="https://api.whatsapp.com/send?phone=5511992084052">
