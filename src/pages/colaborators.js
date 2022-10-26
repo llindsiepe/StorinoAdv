@@ -133,18 +133,6 @@ function Colaborators() {
       <Idealizadores>
         <DivColaboradores>
           <Colaboradores
-            src={Wanessa}
-            name="Wanessa Belchior"
-            text="Advogada"
-            description="+ Leia mais"
-            handleOpen={handleOpen}
-            open={open}
-            setOpen={setOpen}
-            about="Graduada em Direito na Universidade Nove de Julho - UNINOVE. Pós Graduanda em Direito e Processo do trabalho."
-            email="w.belchior@storino.adv.br"
-            oab="OAB/SP 468.759"
-          />
-          <Colaboradores
             src={Patricia}
             name="Patricia de Oliveira Ferreira"
             text="Advogada"
