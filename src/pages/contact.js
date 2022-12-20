@@ -45,7 +45,7 @@ function Contact() {
             <a href="https://api.whatsapp.com/send?phone=5511992084052">
               <ButtonSecondary>Envie um Whatsapp</ButtonSecondary>
             </a>
-            <a href="mailto:email@example.com">
+            <a href="mailto:storino@storino.adv.br">
               <ButtonSecondary>Envie um Email</ButtonSecondary>
             </a>
           </Options>
